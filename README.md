@@ -1,6 +1,6 @@
 # 86 Fest 2026 — Landing Site
 
-Single-page landing site for **86 Fest 2026**, Ireland's Toyota & Lexus festival — led by the AE86, hosted by **JDM Classics**. Deployed to **86fest.ie**.
+Single-page landing site for **86 Fest 2026**, Ireland's Toyota festival — led by the AE86, hosted by **JDM Classics**. Deployed to **86fest.ie**.
 
 Plain HTML/CSS/JS — no framework, no build step. Drop it on any static host.
 

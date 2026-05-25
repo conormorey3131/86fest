@@ -30,7 +30,7 @@
 
   /* Layout */
   --container:    1180px;
-  --header-h:     64px;
+  --header-h:     88px;
 
   /* Type */
   --font-display: "Bebas Neue", "Zen Kaku Gothic New", system-ui, sans-serif;
@@ -102,7 +102,7 @@ ul { list-style: none; padding: 0; margin: 0; }
 
 .brand { display: inline-flex; align-items: center; }
 .brand__logo {
-  height: 36px;
+  height: 64px;
   width: auto;
   /* The logo is on a white background — keep it readable on dark by giving it a soft halo */
   filter: drop-shadow(0 2px 8px rgba(0,0,0,0.6));
@@ -453,8 +453,93 @@ ul { list-style: none; padding: 0; margin: 0; }
 }
 .feature p { margin: 0; color: var(--text-dim); }
 
+/* ---------- Guests ---------- */
+.guests {
+  background:
+    radial-gradient(60% 80% at 50% 0%, rgba(255,90,31,0.06), transparent 70%),
+    #08080a;
+}
+.guest {
+  position: relative;
+  padding: 32px 28px;
+  background:
+    radial-gradient(80% 100% at 0% 0%, rgba(255,90,31,0.10), transparent 60%),
+    var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  max-width: 720px;
+  overflow: hidden;
+}
+.guest__badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: rgba(255,90,31,0.12);
+  border: 1px solid rgba(255,90,31,0.35);
+  padding: 6px 10px;
+  border-radius: 999px;
+  margin-bottom: 16px;
+}
+.guest__name {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 4.5vw, 44px);
+  letter-spacing: .02em;
+  text-transform: uppercase;
+  margin: 0 0 6px;
+  line-height: 1;
+}
+.guest__role {
+  margin: 0 0 16px;
+  color: var(--text-mute);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.guest__body {
+  margin: 0;
+  color: var(--text-dim);
+  font-size: clamp(15px, 1.7vw, 17px);
+  line-height: 1.6;
+}
+.guests__more {
+  margin: 28px 0 0;
+  color: var(--text-mute);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+
 /* ---------- Tickets ---------- */
 .tickets { background: #08080a; }
+
+.notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  max-width: 720px;
+  padding: 16px 20px;
+  margin: 0 0 32px;
+  background:
+    linear-gradient(135deg, rgba(255,180,34,0.10), rgba(255,90,31,0.10));
+  border: 1px solid rgba(255,180,34,0.35);
+  border-radius: var(--radius);
+}
+.notice__icon {
+  flex: 0 0 auto;
+  color: var(--accent-2);
+  margin-top: 2px;
+}
+.notice p {
+  margin: 0;
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.5;
+}
 
 .cards {
   display: grid;

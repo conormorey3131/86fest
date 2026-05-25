@@ -31,6 +31,53 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@700;900&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Event structured data for Google rich results -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Festival",
+    "name": "86 Fest 2026",
+    "description": "Ireland's celebration of Toyota and Lexus, led by the legendary AE86. Show cars, drivers, drift demos including Shinji & Masayo Minowa, and the community.",
+    "startDate": "2026-09-06T10:00:00+01:00",
+    "endDate": "2026-09-06T18:00:00+01:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "image": "https://86fest.ie/logo/logo.jpeg",
+    "url": "https://86fest.ie/",
+    "location": {
+      "@type": "Place",
+      "name": "Mondello Park",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Donore",
+        "addressLocality": "Naas",
+        "addressRegion": "Co. Kildare",
+        "addressCountry": "IE"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "JDM Classics",
+      "url": "https://www.instagram.com/jdm_classics_irl/"
+    },
+    "performer": [
+      {
+        "@type": "PerformingGroup",
+        "name": "Shinji & Masayo Minowa"
+      }
+    ],
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Driver Ticket",
+        "url": "https://mondellopark.checkfront.com/reserve/?preview=1&item_id=129",
+        "availability": "https://schema.org/InStock",
+        "category": "Driver"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -93,6 +140,25 @@
             <span>Mondello Park</span>
           </li>
         </ul>
+
+        <div class="countdown" id="countdown" data-reveal aria-label="Countdown to 86 Fest 2026">
+          <div class="countdown__unit">
+            <span class="countdown__num" data-cd="days">--</span>
+            <span class="countdown__label">Days</span>
+          </div>
+          <div class="countdown__unit">
+            <span class="countdown__num" data-cd="hours">--</span>
+            <span class="countdown__label">Hours</span>
+          </div>
+          <div class="countdown__unit">
+            <span class="countdown__num" data-cd="minutes">--</span>
+            <span class="countdown__label">Mins</span>
+          </div>
+          <div class="countdown__unit">
+            <span class="countdown__num" data-cd="seconds">--</span>
+            <span class="countdown__label">Secs</span>
+          </div>
+        </div>
 
         <div class="hero__ctas" data-reveal>
           <a class="btn btn--primary" href="https://forms.gle/n4jrZTy3vRsJw3TG6" target="_blank" rel="noopener noreferrer">
@@ -232,6 +298,42 @@
               <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3Zm5 16H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2Z"/></svg>
             </a>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DIRECTIONS ============ -->
+    <section class="section directions" id="directions" aria-labelledby="directionsTitle">
+      <div class="container">
+        <p class="section__eyebrow" data-reveal>Getting There</p>
+        <h2 class="section__title" id="directionsTitle" data-reveal>Find Mondello.</h2>
+
+        <div class="directions__grid">
+          <div class="directions__info" data-reveal>
+            <p class="directions__address">
+              <strong>Mondello Park</strong><br/>
+              Donore, Naas,<br/>
+              Co. Kildare, Ireland
+            </p>
+            <ul class="directions__list">
+              <li>~40 min drive from Dublin City</li>
+              <li>Free on-site parking</li>
+              <li>Gates open from early morning — arrive before 10am for discounted public entry</li>
+            </ul>
+            <a class="btn btn--primary" href="https://www.google.com/maps/dir/?api=1&destination=Mondello+Park+Donore+Naas+Co+Kildare" target="_blank" rel="noopener noreferrer">
+              Open in Google Maps
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3Zm5 16H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2Z"/></svg>
+            </a>
+          </div>
+
+          <div class="directions__map" data-reveal>
+            <iframe
+              title="Map showing Mondello Park location"
+              src="https://www.google.com/maps?q=Mondello+Park+Donore+Naas+Co+Kildare&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen></iframe>
+          </div>
         </div>
       </div>
     </section>
